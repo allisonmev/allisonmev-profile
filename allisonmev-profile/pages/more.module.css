@@ -1,0 +1,97 @@
+.moreSection {
+  height: auto; /* Adjusted to auto to allow for dynamic content size */
+  margin-bottom: 3%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  margin: auto;
+  overflow: auto; /* Prevent content from overflowing */
+  page-break-inside: avoid;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: auto; /* Adjust to auto to allow for dynamic content size */
+  overflow: auto; /* Adjust as needed */
+  overflow-x: hidden; /* Hide horizontal scrollbar for this container */
+  overflow-y: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  gap: 20px; /* Adjust the gap between icons */
+ }
+ 
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make the div circular */
+  background-color: #f0f0f0; /* Optional: Add a background color */
+  overflow: hidden; /* Ensure the content is clipped to the circle */
+ }
+ 
+ .icon img {
+  width: 100%;
+  height: auto;
+ }
+ 
+ .icon h3 {
+  margin-top: 10px; /* Adjust the space between the image and the header */
+ }
+
+ .icon:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+ 
+.moreQuoteContainer {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  align-items: flex-start; /* Align children to the top */
+  justify-content: flex-start; /* Align children to the start of the container */
+  padding: 30px; /* Padding inside the rectangle */
+  margin: 20px; /* Margin outside the rectangle */
+  border-radius: 10px; /* Add rounded corners */
+  border: 2px solid #816E91; /* Add a border with a width of 5px and color red */
+  overflow: auto;
+ }
+
+ 
+.largeBoldQuote {
+  font-size: 2em; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.rightAlign {
+  align-self: flex-end; /* Align the second quotation mark to the right */
+}
+
+.quoteText {
+  font-size: 1.5em; /* Make the quote text larger */
+}
+
+.italicText {
+  font-style: italic; /* Italicize the attribution */
+}
+ 

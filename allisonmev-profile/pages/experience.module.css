@@ -1,0 +1,46 @@
+.expSection {
+  height: auto; /* Adjusted to auto to allow for dynamic content size */
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  margin: auto;
+  overflow: auto; /* Prevent content from overflowing */
+  page-break-inside: avoid;
+  padding-top: 40px;
+  overflow-y: hidden; /* Hide horizontal scrollbar */
+}
+
+.expCompanyContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  align-items: flex-start; /* Align children to the top */
+  justify-content: flex-start; /* Align children to the start of the container */
+  padding: 70px; /* Padding inside the rectangle */
+  margin: 20px; /* Margin outside the rectangle */
+  border-radius: 10px; /* Add rounded corners */
+  overflow: auto; /* Handle overflow */
+  padding-bottom: 10px;
+}
+
+.companyText {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-right: 10px; /* Space between the text and the cards */
+}
+
+.cardsContainer {
+  position: relative; /* Required for absolute positioning of pseudo-elements */
+}
+
+.cardsContainer::before {
+  content: '';
+  position: absolute;
+  left: -40px; /* Adjust as needed to position the bracket */
+  top: 50px;
+  bottom: 0;
+  width: 2px; /* Width of the bracket */
+  background-color: #000; /* Color of the bracket */
+  z-index: -1;
+}

@@ -1,0 +1,55 @@
+.aboutSection {
+  height: auto; /* Adjusted to auto to allow for dynamic content size */
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  margin: auto;
+  overflow: auto; /* Prevent content from overflowing */
+  page-break-inside: avoid;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+}
+
+.aboutProfileImage {
+  padding-top: 3%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.aboutTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutTextInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center;
+  padding-top: 1%;
+  background-color: #f0f0f0; /* Replace #007DB2 with your desired color */
+  padding: 5%; /* Add some padding inside the rectangle */
+  margin-top: 5%; /* Add some margin above the rectangle for spacing */
+  margin-left: 10%; /* Add some margin to the left of the rectangle */
+  margin-right: 10%; /* Add some margin to the right of the rectangle */
+  border-radius: 40px; /* Optional: Add rounded corners to the rectangle */
+  overflow: auto; /* Handle overflow */
+}
+
+.text-black {
+  color: #000000; /* Hexadecimal value for black */
+}
+
+.italicize {
+  font-style: italic;
+}

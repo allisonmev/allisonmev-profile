@@ -1,0 +1,13 @@
+/* index.css */
+.mainContainer {
+  scroll-snap-align: start;
+  height: 100vh;
+  background-color: #817091;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ }
