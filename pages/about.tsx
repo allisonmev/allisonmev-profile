@@ -74,7 +74,7 @@ const About: NextPage = () => {
                   brackets={['left', 'right']}
                 >
                   <br />
-                  get a snapshot of who i am&nbsp;
+                  a snapshot of who i am&nbsp;
                 </RoughNotation>
               </h3>
             </div>
