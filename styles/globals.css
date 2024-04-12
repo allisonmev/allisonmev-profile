@@ -3,36 +3,36 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ --foreground-rgb: 0, 0, 0;
+ --background-start-rgb: 214, 219, 220;
+ --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+ :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    --background-start-rgb: 34, 34, 34; /* Darker shade of gray for better contrast */
+    --background-end-rgb: 34, 34, 34; /* Same as start for a solid background */
+ }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+ color: rgb(var(--foreground-rgb));
+ background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  font-family: 'Montserrat', sans-serif;
+ font-family: 'Montserrat', sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 
 @layer utilities {
-  .text-balance {
+ .text-balance {
     text-wrap: balance;
-  }
+ }
 }
