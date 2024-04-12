@@ -124,6 +124,7 @@ const About: NextPage = () => {
                 in teams!
               </span>
               <span>
+                <br />
                 <Image
                   src="/images/me_logo.png"
                   alt="logo"
