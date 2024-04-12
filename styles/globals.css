@@ -8,12 +8,10 @@
  --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
- :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 34, 34, 34; /* Darker shade of gray for better contrast */
-    --background-end-rgb: 34, 34, 34; /* Same as start for a solid background */
- }
+body.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 34, 34, 34;
+  --background-end-rgb: 34, 34, 34;
 }
 
 body {
