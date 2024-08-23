@@ -53,3 +53,16 @@
 .italicize {
   font-style: italic;
 }
+
+.dark-mode-text {
+  color: #000000; /* Black color for dark mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  .aboutTextInfo {
+    background-color: #333; /* Example dark background color */
+  }
+  .text-black, .dark-mode-text {
+    color: #000000; /* Ensure text is black in dark mode */
+  }
+}
