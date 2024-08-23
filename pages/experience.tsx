@@ -28,7 +28,7 @@ const experiences = [
     'Jenkins pipeline for automated testing, mentored QA analysts and QA testers.',
   },
   {
-    title: 'Associate Software Engineer in Test',
+    title: 'Software Engineer in Test',
     date: 'Oct 2021 - Apr 2022',
     description: 'Built and enhanced data-driven automated tests, collaborated with ' +
     'cross-functional teams to plan test scopes for both mobile and web applications, ' +
