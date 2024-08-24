@@ -15,9 +15,16 @@ const About: NextPage = () => {
   const [showAnnotation, setShowAnnotation] = useState(false);
   // This will help with rendering the site and help hydrating the site
   const [isClient, setIsClient] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
 
   useEffect(() => {
     setIsClient(true);
+
+    // Detect dark mode preference
+    const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = () => setIsDarkMode(mediaQueryList.matches);
+    mediaQueryList.addListener(handleChange);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,6 +46,7 @@ const About: NextPage = () => {
 
     return () => {
       observer.disconnect();
+      mediaQueryList.removeListener(handleChange); 
     };
   }, []);
 
@@ -59,7 +67,7 @@ const About: NextPage = () => {
               />
             </div>
             <div className={styles.aboutTextContainer}>
-              <h1 className="font-semibold leading-5 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center">
+              <h1 className={`font-semibold leading-5 tracking-tight ${isDarkMode ? 'dark-mode-text' : 'text-gray-900'} sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center`}>
                 About
               </h1>
               <h3 className="text-lg text-black ml-1 text-center">

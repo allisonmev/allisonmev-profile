@@ -59,9 +59,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .aboutTextInfo {
-    background-color: #333; /* Example dark background color */
+  /*.aboutTextInfo {
+    background-color: #333; 
   }
+  */
   .text-black, .dark-mode-text {
     color: #000000; /* Ensure text is black in dark mode */
   }
