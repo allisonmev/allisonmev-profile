@@ -56,3 +56,13 @@
      flex: 0 1 calc(25% - 1em); /* Four cards per row */
   }
  }
+
+ .dark-mode-text {
+  color: #000000; /* Black color for dark mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-black, .dark-mode-text {
+    color: #000000; /* Ensure text is black in dark mode */
+  }
+}

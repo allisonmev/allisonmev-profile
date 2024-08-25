@@ -13,17 +13,15 @@ const { Element: ScrollElement } = Scroll;
 const About: NextPage = () => {
   const annotationRef = useRef(null);
   const [showAnnotation, setShowAnnotation] = useState(false);
-  // This will help with rendering the site and help hydrating the site
-  const [isClient, setIsClient] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
-
     // Detect dark mode preference
     const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(mediaQueryList.matches); // Set initial state based on user's preference
+
     const handleChange = () => setIsDarkMode(mediaQueryList.matches);
-    mediaQueryList.addListener(handleChange);
+    mediaQueryList.addEventListener('change', handleChange);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -46,7 +44,7 @@ const About: NextPage = () => {
 
     return () => {
       observer.disconnect();
-      mediaQueryList.removeListener(handleChange); 
+      mediaQueryList.removeEventListener('change', handleChange);
     };
   }, []);
 

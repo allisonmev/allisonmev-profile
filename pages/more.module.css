@@ -95,3 +95,12 @@
   font-style: italic; /* Italicize the attribution */
 }
  
+.dark-mode-text {
+  color: #000000; /* Black color for dark mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-black, .dark-mode-text {
+    color: #000000; /* Ensure text is black in dark mode */
+  }
+}

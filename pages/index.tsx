@@ -12,11 +12,7 @@ import styles from './index.module.css';
 
 
 const IndexPage: () => React.ReactElement = (): React.ReactElement => {
-  // Should I delete?
-  const [isClient, setIsClient] = useState(false); // This will help with rendering the site and help hydrating the site
-
   useEffect(() => {
-    setIsClient(true); // Should I delete?
     window.scrollTo(0, 0);
   }, []);
 

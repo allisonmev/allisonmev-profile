@@ -16,11 +16,16 @@ const { Element: ScrollElement } = Scroll;
 const Recommendations: NextPage = () => {
  const annotationRef = useRef(null);
   const [showAnnotation, setShowAnnotation] = useState(false);
-  // This will help with rendering the site and help hydrating the site
-  const [isClient, setIsClient] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    // Detect dark mode preference
+    const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(mediaQueryList.matches); // Set initial state based on user's preference
+    
+    const handleChange = () => setIsDarkMode(mediaQueryList.matches);
+    mediaQueryList.addEventListener('change', handleChange);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -42,6 +47,7 @@ const Recommendations: NextPage = () => {
 
     return () => {
       observer.disconnect();
+      mediaQueryList.removeEventListener('change', handleChange);
     };
   }, []);
 
@@ -54,7 +60,7 @@ const Recommendations: NextPage = () => {
         <ScrollElement id="reccSection" name="reccSection">
           <div>
             {/*Experience Content*/}
-            <h1 className="font-semibold leading-5 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center">
+            <h1 className={`font-semibold leading-5 tracking-tight ${isDarkMode ? 'dark-mode-text' : 'text-gray-900'} sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center`}>
               Recommendations
             </h1>
             <h3 className="text-lg text-gray-600 dark:text-gray-300 ml-1 text-center">
