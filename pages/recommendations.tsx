@@ -81,16 +81,18 @@ const Recommendations: NextPage = () => {
           </div>
           <div className={styles.container}>
             <div className={styles.row}>
-              {/* First Row with 3 cards */}
               <RevealWrapper>
                 <Link href="https://www.linkedin.com/in/allison-villapando/details/recommendations/?detailScreenTabIndex=0" passHref>
                   <div className={styles.card}>
-                    <Image
-                      src='/images/recc_two.png'
-                      alt="Sandra Review"
-                      width={800}
-                      height={500}
-                    />
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <Image
+                        src='/images/sm_pfp.jpg'
+                        alt="Sandra Review"
+                        width={50}
+                        height={50}
+                      />
+                      <h3>Senior Software Engineer</h3>
+                      </div>
                     <p>
                       I had the pleasure of working with Allison on the Architecture and SRE team at Zwift, and it was truly a great experience.<br /><br /> 
                       From the moment she joined the team, Allison demonstrated initiative and adaptability, transitioning seamlessly from QA Engineer to Software 
@@ -106,12 +108,15 @@ const Recommendations: NextPage = () => {
               <RevealWrapper>
                 <Link href="https://www.linkedin.com/in/allison-villapando/details/recommendations/?detailScreenTabIndex=0" passHref>
                   <div className={styles.card}>
-                    <Image
-                      src='/images/recc_one.png'
-                      alt="Brian Review"
-                      width={800}
-                      height={500}
-                    />
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <Image
+                        src='/images/bc_pfp.jpg'
+                        alt="Brian Review"
+                        width={50}
+                        height={50}
+                      />
+                      <h3>Senior QA Engineer</h3>
+                    </div>
                     <p>
                       Rockstar, superstar, MVP, key player -- there are many words I can use to describe what I observed from Allison as one of her senior QAs in our internal tools 
                       team at Zwift. Prior to transitioning over to our infrastructure team as an engineer, Allison started as a junior QA and I had the pleasure to have a front row
@@ -129,12 +134,15 @@ const Recommendations: NextPage = () => {
               <RevealWrapper>
                 <Link href="https://www.linkedin.com/in/allison-villapando/details/recommendations/?detailScreenTabIndex=0" passHref>
                   <div className={styles.card}>
-                    <Image
-                      src='/images/recc_four.png'
-                      alt="Iago Review"
-                      width={800}
-                      height={500}
-                    />
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <Image
+                        src='/images/io_pfp.jpg'
+                        alt="Iago Review"
+                        width={50}
+                        height={50}
+                      />
+                      <h3>Staff Platform Software Engineer</h3>
+                    </div>
                     <p>
                     I&apos;ve mentored Allison from QA to Software Engineer and she&apos;s managed to exceed expectations on her QA role while being mentored and 
                     learning what she needed for the new position. Since then, she&apos;s exceeded expectations as a Software Engineer and managed to have a great impact in 
