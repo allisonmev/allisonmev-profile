@@ -1,12 +1,12 @@
 .aboutSection {
-  height: auto; /* Adjusted to auto to allow for dynamic content size */
+  height: auto;
   margin-bottom: 3%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  overflow: auto; /* Prevent content from overflowing */
+  overflow: auto;
   page-break-inside: avoid;
 }
 
@@ -34,20 +34,20 @@
 .aboutTextInfo {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content horizontally */
+  align-items: center;
   justify-content: center;
   padding-top: 1%;
-  background-color: #f0f0f0; /* Replace #007DB2 with your desired color */
-  padding: 5%; /* Add some padding inside the rectangle */
-  margin-top: 5%; /* Add some margin above the rectangle for spacing */
-  margin-left: 10%; /* Add some margin to the left of the rectangle */
-  margin-right: 10%; /* Add some margin to the right of the rectangle */
-  border-radius: 40px; /* Optional: Add rounded corners to the rectangle */
+  background-color: #f0f0f0;
+  padding: 5%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 40px;
   overflow: auto; /* Handle overflow */
 }
 
 .text-black {
-  color: #000000; /* Hexadecimal value for black */
+  color: #000000;
 }
 
 .italicize {
@@ -55,11 +55,11 @@
 }
 
 .dark-mode-text {
-  color: #000000; /* Black color for dark mode */
+  color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   .text-black, .dark-mode-text {
-    color: #000000; /* Ensure text is black in dark mode */
+    color: #000000;
   }
 }

@@ -1,13 +1,13 @@
 .moreSection {
-  height: auto; /* Adjusted to auto to allow for dynamic content size */
+  height: auto;
   margin-bottom: 3%;
   padding-top: 3%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  overflow: auto; /* Prevent content from overflowing */
+  overflow: auto;
   page-break-inside: avoid;
 }
 
@@ -19,9 +19,9 @@
   margin-bottom: 30px;
   margin-left: 50px;
   margin-right: 50px;
-  height: auto; /* Adjust to auto to allow for dynamic content size */
-  overflow: auto; /* Adjust as needed */
-  overflow-x: hidden; /* Hide horizontal scrollbar for this container */
+  height: auto;
+  overflow: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
@@ -34,7 +34,7 @@
   margin-top: 50px;
   margin-left: 30px;
   margin-right: 30px;
-  gap: 20px; /* Adjust the gap between icons */
+  gap: 20px;
  }
  
 
@@ -43,11 +43,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100px; /* Adjust the size as needed */
-  height: 100px; /* Adjust the size as needed */
-  border-radius: 50%; /* Make the div circular */
-  background-color: #f0f0f0; /* Optional: Add a background color */
-  overflow: hidden; /* Ensure the content is clipped to the circle */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  overflow: hidden;
  }
  
  .icon img {
@@ -56,7 +56,7 @@
  }
  
  .icon h3 {
-  margin-top: 10px; /* Adjust the space between the image and the header */
+  margin-top: 10px;
  }
 
  .icon:hover {
@@ -65,42 +65,41 @@
 
  
 .moreQuoteContainer {
-  /* position: relative; */
   display: flex;
-  flex-direction: column; /* Align children vertically */
-  align-items: flex-start; /* Align children to the top */
-  justify-content: flex-start; /* Align children to the start of the container */
-  padding: 30px; /* Padding inside the rectangle */
-  margin: 20px; /* Margin outside the rectangle */
-  border-radius: 10px; /* Add rounded corners */
-  border: 2px solid #816E91; /* Add a border with a width of 5px and color red */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid #816E91;
   overflow: auto;
  }
 
  
 .largeBoldQuote {
-  font-size: 2em; /* Adjust size as needed */
+  font-size: 2em;
   font-weight: bold;
 }
 
 .rightAlign {
-  align-self: flex-end; /* Align the second quotation mark to the right */
+  align-self: flex-end;
 }
 
 .quoteText {
-  font-size: 1.5em; /* Make the quote text larger */
+  font-size: 1.5em;
 }
 
 .italicText {
-  font-style: italic; /* Italicize the attribution */
+  font-style: italic;
 }
  
 .dark-mode-text {
-  color: #000000; /* Black color for dark mode */
+  color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   .text-black, .dark-mode-text {
-    color: #000000; /* Ensure text is black in dark mode */
+    color: #000000;
   }
 }

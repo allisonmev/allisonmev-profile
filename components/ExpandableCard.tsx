@@ -1,5 +1,4 @@
-// components/ExpandableCard.tsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import styles from './ExpandableCard.module.css'
 
 interface ExpandableCardProps {
@@ -25,7 +24,6 @@ export const ExpandableCard: React.FC<ExpandableCardProps> = ({
         className='bg-white shadow-md rounded-md p-5 w-full max-w-full focus:outline-none'
         >
         <div className="flex justify-between items-center">
-          {/* title */}
           <div className="flex items-center">
             <h2 className="text-xl font-bold mr-2">{title}</h2>
             <h3 className="text-m font-thin">{date}</h3>

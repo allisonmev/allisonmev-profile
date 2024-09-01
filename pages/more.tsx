@@ -1,4 +1,3 @@
-//  Experience.tsx
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import type { NextPage } from 'next';
@@ -94,14 +93,14 @@ const More: NextPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setShowAnnotation(true); // Trigger the annotation to show
-            observer.disconnect(); // Disconnect the observer after the animation is triggered
+            setShowAnnotation(true);
+            observer.disconnect();
           }
         });
       },
       {
         rootMargin: '0px',
-        threshold: 0.65, // Adjust the threshold as needed
+        threshold: 0.65,
       }
     );
 
@@ -119,7 +118,6 @@ const More: NextPage = () => {
   return (
     <div className={styles.moreSection}>
       {' '}
-      {/* Use the CSS Module class */}
       <div ref={annotationRef}>
         <ScrollElement id="moreSection" name="moreSection">
           <div>
@@ -131,7 +129,7 @@ const More: NextPage = () => {
               <RoughNotation
                 animate="true"
                 type="bracket"
-                show={showAnnotation} // Control the visibility based on the state
+                show={showAnnotation}
                 color="#BE2ED6"
                 animationDelay={1000}
                 animationDuration={2500}

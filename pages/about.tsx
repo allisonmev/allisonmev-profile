@@ -1,6 +1,5 @@
 'use client'
 
-//  About.tsx
 import React, { useEffect, useRef, useState } from 'react';
 import type { NextPage } from 'next';
 import * as Scroll from 'react-scroll';
@@ -27,8 +26,8 @@ const About: NextPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setShowAnnotation(true); // Trigger the annotation to show
-            observer.disconnect(); // Disconnect the observer after the animation is triggered
+            setShowAnnotation(true);
+            observer.disconnect();
           }
         });
       },
@@ -51,7 +50,6 @@ const About: NextPage = () => {
   return (
     <div className={styles.aboutSection}>
       {' '}
-      {/* Use the CSS Module class */}
       <div ref={annotationRef}>
         <ScrollElement id="aboutSection" name="aboutSection">
           {/* Your about section content */}
@@ -72,7 +70,7 @@ const About: NextPage = () => {
                 <RoughNotation
                   animate="true"
                   type="bracket"
-                  show={showAnnotation} // Control the visibility based on the state
+                  show={showAnnotation}
                   color="#BE2ED6"
                   animationDelay={1000}
                   animationDuration={2500}

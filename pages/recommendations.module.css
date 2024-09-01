@@ -16,31 +16,15 @@
   gap: 5px;
 }
 
-/* .card {
-  flex: 0 1 calc(50% - 1em);
-  box-sizing: border-box;
-  margin: 1rem .25em;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 500px;
-  height: 500px;
-  padding: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background-color: #ffffff;
-} */
-
-
 .card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to start to keep content aligned to the left */
+  align-items: flex-start;
   box-sizing: border-box;
   margin: 1rem .25em;
   text-align: left;
   width: 500px;
-  height: auto; /* Adjust height to fit content */
+  height: auto;
   padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -48,34 +32,24 @@
 }
 
 .card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-  width: auto; /* Adjust image width to fit content */
+  width: auto;
   height: auto;
-  margin-right: 10px; /* Space between image and heading */
+  margin-right: 10px;
 }
 
-.card h2 { /* Style for the heading */
-  margin-top: 0; /* Align heading with the top of the image */
-  font-size: 1.2rem; /* Adjust size as needed */
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
 }
  
 .card p {
   margin-top: 10px;
   font-size: 0.8rem;
 }
-
-/* .card img {
-  width: 100%;
-  height: auto;
-}
-
-.card p {
-  margin-top: 10px;
-  font-size: 0.8rem;
-} */
 
 @media screen and (min-width: 40em) {
   .card {
@@ -90,11 +64,11 @@
  }
 
  .dark-mode-text {
-  color: #000000; /* Black color for dark mode */
+  color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   .text-black, .dark-mode-text {
-    color: #000000; /* Ensure text is black in dark mode */
+    color: #000000;
   }
 }

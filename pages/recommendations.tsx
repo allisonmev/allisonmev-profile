@@ -1,4 +1,3 @@
-//  Experience.tsx
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import type { NextPage } from 'next';
@@ -8,7 +7,7 @@ import { RoughNotation } from 'react-rough-notation';
 import Image from 'next/image';
 import Link from 'next/link';
 import ReadMoreButton from '@/components/ReadMoreButton';
-import { RevealWrapper } from 'next-reveal'; // Import RevealWrapper
+import { RevealWrapper } from 'next-reveal';
 
 
 const { Element: ScrollElement } = Scroll;
@@ -30,14 +29,14 @@ const Recommendations: NextPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setShowAnnotation(true); // Trigger the annotation to show
-            observer.disconnect(); // Disconnect the observer after the animation is triggered
+            setShowAnnotation(true);
+            observer.disconnect();
           }
         });
       },
       {
         rootMargin: '0px',
-        threshold: 0.65, // Adjust the threshold as needed
+        threshold: 0.65,
       }
     );
 
@@ -55,7 +54,6 @@ const Recommendations: NextPage = () => {
   return (
     <div className={styles.reccSection}>
       {' '}
-      {/* Use the CSS Module class */}
       <div ref={annotationRef}>
         <ScrollElement id="reccSection" name="reccSection">
           <div>
@@ -67,7 +65,7 @@ const Recommendations: NextPage = () => {
               <RoughNotation
                 animate="true"
                 type="bracket"
-                show={showAnnotation} // Control the visibility based on the state
+                show={showAnnotation}
                 color="#BE2ED6"
                 animationDelay={1000}
                 animationDuration={2500}

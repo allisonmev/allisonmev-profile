@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 interface TypingTextProps {
-  text: string; // Specifies that 'text' is a string
+  text: string; 
 }
 
 const TypingText: React.FC<TypingTextProps> = ({ text }) => {
@@ -17,7 +17,7 @@ const TypingText: React.FC<TypingTextProps> = ({ text }) => {
           animate={{ opacity: 1 }}
           transition={{
             duration: 0.25,
-            delay: index * 0.1, // Adjust delay as needed
+            delay: index * 0.1,
           }}
         >
           {char}

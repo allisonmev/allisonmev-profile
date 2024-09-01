@@ -1,13 +1,12 @@
-/* DownloadResumeButton.module.css */
 .btn {
-  border: 4px solid #BE2ED6; /* Darker border */
-  border-radius: 25px; /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-  transform-origin: center; /* Adjust the transformation origin */
+  border: 4px solid #BE2ED6;
+  border-radius: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
  }
  
  .btn:hover {
-  transform: scale(1.05); /* Bounce effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  }
  

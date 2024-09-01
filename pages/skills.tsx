@@ -1,4 +1,3 @@
-//  Skills.tsx
 import React, { useEffect, useRef, useState } from 'react';
 import type { NextPage } from 'next';
 import * as Scroll from 'react-scroll';
@@ -62,14 +61,14 @@ const Skills: NextPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setShowAnnotation(true); // Trigger the annotation to show
-            observer.disconnect(); // Disconnect the observer after the animation is triggered
+            setShowAnnotation(true);
+            observer.disconnect();
           }
         });
       },
       {
         rootMargin: '0px',
-        threshold: 0.65, // Adjust the threshold as needed
+        threshold: 0.65,
       }
     );
 
@@ -86,7 +85,6 @@ const Skills: NextPage = () => {
   return (
     <div className={styles.skillsSection}>
       {' '}
-      {/* Use the CSS Module class */}
       <div ref={annotationRef}>
         <ScrollElement id="skillsSection" name="skillsSection">
           {/* Your skills section content */}
@@ -97,7 +95,7 @@ const Skills: NextPage = () => {
             <RoughNotation
               animate="true"
               type="bracket"
-              show={showAnnotation} // Control the visibility based on the state
+              show={showAnnotation}
               color="#BE2ED6"
               animationDelay={1000}
               animationDuration={2500}

@@ -1,12 +1,12 @@
 .expSection {
-  height: auto; /* Adjusted to auto to allow for dynamic content size */
+  height: auto;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  overflow: auto; /* Prevent content from overflowing */
+  overflow: auto;
   page-break-inside: avoid;
   padding-top: 40px;
   overflow-y: hidden; /* Hide horizontal scrollbar */
@@ -15,43 +15,43 @@
 .expCompanyContainer {
   position: relative;
   display: flex;
-  flex-direction: row; /* Align children horizontally */
-  align-items: flex-start; /* Align children to the top */
-  justify-content: flex-start; /* Align children to the start of the container */
-  padding: 70px; /* Padding inside the rectangle */
-  margin: 20px; /* Margin outside the rectangle */
-  border-radius: 10px; /* Add rounded corners */
-  overflow: auto; /* Handle overflow */
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 70px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: auto;
   padding-bottom: 10px;
 }
 
 .companyText {
-  font-size: 24px; /* Adjust font size as needed */
-  margin-right: 10px; /* Space between the text and the cards */
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 .cardsContainer {
-  position: relative; /* Required for absolute positioning of pseudo-elements */
+  position: relative;
 }
 
 .cardsContainer::before {
   content: '';
   position: absolute;
-  left: -40px; /* Adjust as needed to position the bracket */
+  left: -40px;
   top: 50px;
   bottom: 0;
-  width: 2px; /* Width of the bracket */
-  background-color: #000; /* Color of the bracket */
+  width: 2px;
+  background-color: #000;
   z-index: -1;
 }
 
 .dark-mode-text {
-  color: #000000; /* Black color for dark mode */
+  color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   .text-black, .dark-mode-text {
-    color: #000000; /* Ensure text is black in dark mode */
+    color: #000000;
   }
 }
 

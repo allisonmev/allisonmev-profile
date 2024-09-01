@@ -1,20 +1,18 @@
-/* Skills.module.css */
 .skillsSection {
-  /* scroll-snap-align: start; */
   height: auto;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   margin: auto;
-  position: relative; /* Ensure the parent container has a position context */
+  position: relative;
   padding-top: 40px;
 }
 
 .skillsContainer {
    display: grid;
-   grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
-   gap: 10px; /* Adjusts the gap between grid items */
-   padding: 10px; /* Adds padding around the grid container */
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   padding: 10px;
    margin-top: 30px;
    margin-bottom: 30px;
    margin-left: 50px;
@@ -28,11 +26,11 @@
 }
 
 .dark-mode-text {
-  color: #000000; /* Black color for dark mode */
+  color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   .text-black, .dark-mode-text {
-    color: #000000; /* Ensure text is black in dark mode */
+    color: #000000;
   }
 }

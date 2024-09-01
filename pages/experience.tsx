@@ -1,4 +1,3 @@
-//  Experience.tsx
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import type { NextPage } from 'next';
@@ -67,14 +66,14 @@ const Experience: NextPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setShowAnnotation(true); // Trigger the annotation to show
-            observer.disconnect(); // Disconnect the observer after the animation is triggered
+            setShowAnnotation(true);
+            observer.disconnect();
           }
         });
       },
       {
         rootMargin: '0px',
-        threshold: 0.65, // Adjust the threshold as needed
+        threshold: 0.65,
       }
     );
 
@@ -91,11 +90,9 @@ const Experience: NextPage = () => {
   return (
     <div className={styles.expSection}>
       {' '}
-      {/* Use the CSS Module class */}
       <div ref={annotationRef}>
         <ScrollElement id="expSection" name="expSection">
           <div>
-            {/*Experience Content*/}
             <h1 className={`font-semibold leading-5 tracking-tight ${isDarkMode ? 'dark-mode-text' : 'text-gray-900'} sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center`}>
               Experience
             </h1>
@@ -103,7 +100,7 @@ const Experience: NextPage = () => {
               <RoughNotation
                 animate="true"
                 type="bracket"
-                show={showAnnotation} // Control the visibility based on the state
+                show={showAnnotation}
                 color="#BE2ED6"
                 animationDelay={1000}
                 animationDuration={2500}
@@ -119,7 +116,6 @@ const Experience: NextPage = () => {
             <div className={styles.companyText}>Zwift</div>
             <div className={styles.cardsContainer}>
               <div className="grid grid-cols-1 gap-4 overflow-auto">
-                {/*Expandable Card Main Container*/}
                 {experiences.map((experience, index) => (
                   <ExpandableCard
                     key={index}

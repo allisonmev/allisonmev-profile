@@ -1,13 +1,13 @@
 .expandableCardContainer {
-  width: 300px; /* Fixed width */
-  height: 200px; /* Fixed height */
-  overflow: auto; /* Enable scrolling if content exceeds the fixed size */
+  width: 300px;
+  height: 200px;
+  overflow: auto;
  }
 
  .contentContainer {
-  max-height: 200px; /* Adjust based on your needs */
-  max-width: 500px; /* Adjust based on your needs */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
-  overflow-x: auto; /* Enable horizontal scrolling if content exceeds max-width */
+  max-height: 200px;
+  max-width: 500px;
+  overflow-y: auto;
+  overflow-x: auto;
 }
  
