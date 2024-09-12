@@ -11,7 +11,7 @@ const { Element: ScrollElement } = Scroll;
 
 const experiences = [
   {
-    title: 'Associate Software Engineer',
+    title: 'Software Engineer',
     date: 'Dec 2022 - Apr 2024',
     description:
       'Implemented REST APIs for backend systems, develop and deployed microservices, ' +
